@@ -65,18 +65,6 @@ static int command_parse_help(int argc, char** argv, Command* data_ptr, int pos)
 {
 	data_ptr->mode = COMMAND_MODE_HELP;
 
-	printf("使用方法: filedlg [オプション]\n");
-	printf("ファイルダイアログを起動し、選択されたファイルのパスを出力します。\n");
-	printf("\n");
-	printf(" -t, --title       ファイルダイアログのタイトル[省略可]\n");
-	printf(" -a, --action      ファイルダイアログを起動するときの動作(open/save)[省略可]\n");
-	printf(" -f, --filter      ファイルダイアログで選択可能なファイルの拡張子(txt/bmp/jpg/png[複数可])[省略可]\n");
-	printf("\n");
-	printf("使用例:\n");
-	printf(" ./filedlg --title \"ファイルの選択\" --action open --filter bmp+jpg+png\n");
-	printf(" ./filedlg -t Sample -a save -f txt\n");
-	printf("\n");
-
 	return 0;
 }
 
