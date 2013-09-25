@@ -19,8 +19,16 @@
 /******************************************************************************
  function
 ******************************************************************************/
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int file_dialog_open(Command* cmd_ptr);
 
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // _FILEDLG_H_
 
